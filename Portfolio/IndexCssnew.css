@@ -1,0 +1,226 @@
+html,body{
+    margin : 0;
+    padding: 0;
+    font-family : "Lucida Grande";
+}
+
+
+header{
+    height: 80px;
+    width : 100%;
+    background-color : rgba(8, 8, 8, 0.8);
+    position : fixed ; 
+    z-index: 10;
+    top: 0px;
+}
+
+li a{
+    transition : color 1s;
+}
+
+.header-right{
+    float: right;
+    height : 77px;
+    padding-right : 50px;
+}
+
+.header-right li{
+    padding : 10px 30px;
+    list-style: none;
+    color :whitesmoke;
+    float: left;
+    letter-spacing: 2px;
+}
+
+.Welcome {
+    float : left;
+    color : whitesmoke;
+    font-size: 40px;
+    opacity: 0.85;
+    margin : 15px 0px 10px 25px;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    color : whitesmoke;
+}
+
+.header-right a{
+    display : block;
+    height : 77px;
+    line-height: 77px;
+    margin-top: -26px;
+}
+/*End of header*/
+
+.first-container{
+    width : 100%;
+    height : 900px;
+    background-image : url(https://lh3.googleusercontent.com/AujcYRAR1FnCAgKZzbXyP2BJTemfaBkVhSC6iZokXUFmU1QulgIQQaiYLKWIeB2EJCw5ygGw3qKQCvbbck9bJdon5woaJZlXZqjiSwe1ZYyH49zK9su7Z78NAq13bSnp04f0b1DPX5WXL0RYdrQMK64vYxXsAOa3eU-JN-vxD8dvWyeQxEZUz8CYEoCbLUakQ2MBTG58aR_LHTArKtqh_9av-a7a7PR6zcGCxJTbutlDernygYH7xVmGwmkPly97M0wkKJsPWw52iQ19q9TE_WJao4rOoio9AABH9A3phz7NbOB7SRBM4gQ0oeFRwMzvBJGwnhKj9dv2G5QYf0B6yGg7BAJNPnPeMDF2JUGMqxliffpeqVQt9cXJ4jPclQTPrxq4F-adUb2bh8N2a-1udxzuzYZJnCV7A2C-liLgt-CNuxOa-DgyTVN6v8It8j7cYfBJ5rmaO9mWz5AiSX1I3kXKlLAUILoduwEsopaq_YMxBPQG_u61wipMZ800rulYTiuUyf0qz8obbDvYty7tDndZ05PZHtgXHRtzKVS5xek3GRhAvY99YZeAYuHnbiZc0IOo_5VUV7O7APdTApaQ0NicsctTgZG8Kr04DjLyCT0_W9yoFyxNg31bruiSYiUr0vwVee6NYFAZN56_Knc0PLgflkpI2VMXwKvUyrxSB4kjsnUIQx_6DZlWauIf5w=w1228-h775-no);
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    padding-right : 50px;
+    padding-left : 50px;
+    padding-top : 15%;
+}
+
+.first-main{
+    position : relative;
+    top : -15px;
+    text-align: center; 
+}
+
+.MIT-ahref {
+    font-weight: bold;
+}
+
+.first-container p{
+    font-size: 30px;
+    line-height : 40px;
+}
+
+
+.image-container{
+    height : 40%;
+    width: 20%;
+    text-align: center;
+    margin-left : 40%;
+    margin-right : 40%;
+    padding-top: 5%;
+    margin-bottom: 100px;
+}
+
+.myimage{
+    height : 270px;
+    width : 270px;
+    border-radius: 50%;
+}
+
+.first-text{
+    margin-top : -30px;
+    cursor: default;
+}
+
+.second-text{
+    margin-top: 20px;
+    cursor: default;
+}
+
+/*First section over*/
+
+
+.second-container{
+    width : 100%;
+    height: 540px;
+    margin-top : -39px;
+    margin-bottom : -16px;
+    background-image: url(https://wallpaperplay.com/walls/full/4/5/f/80955.jpg);
+    background-size: cover;
+}
+
+.temp1{
+    color : whitesmoke;
+    opacity: 0.95;
+    padding-left : 3%;
+    line-height: 30px;
+    font-size: 24px;
+    cursor: default;
+}
+
+.temp2{
+    color:white;
+    padding-left : 10%;
+    margin-top: -12px;
+    text-shadow : 0px 1px 25px whitesmoke;
+    cursor: default;
+}
+
+.temp2 li{
+    font-size : 24px;
+    padding : 10px 25px;
+    word-spacing: 16px;
+}
+
+.temp3{
+    line-height: 30px;
+    padding-left: 3%;
+    font-size : 24px;
+    color : white;
+    cursor: default;
+}
+
+.temp4{
+    color : white;
+    padding-left : 10%;
+    margin-top : -12px;
+    cursor: default;
+}
+
+.temp4 li{
+    font-size : 24px;
+    padding : 10px 25px;
+    word-spacing: 16px;
+}
+
+.temp5{
+    color : white;
+    font-size: 24px;
+    padding-left: 3%;
+    line-height: 30px;
+    cursor: default;
+}
+
+/*Second section over*/
+
+.third-container{
+    height: 300px;
+    background-color: rgba(98,98,98,0.8);
+    color : whitesmoke;
+    background-image: url(https://wallpaperplay.com/walls/full/4/5/f/80955.jpg);
+    background-size : cover;
+    margin-top : -27px;
+}
+
+.text1{
+    padding-left : 3%;
+    font-size: 26px;
+    cursor: default;
+}
+
+.text2{
+    padding-left : 3%;
+    font-size : 24px;
+    word-spacing: 2px;
+    cursor: default;
+}
+
+.contact-me{
+    line-height : 50px;
+    font-size : 34px;
+    padding-left : 3%;
+    letter-spacing: 2px;
+    font-family : "Algerian";
+    text-shadow : 0px 1px 25px whitesmoke;
+    cursor: default;
+}
+
+span{
+    padding : 0px 30px;
+    text-shadow: none;
+}
+
+hr{
+    border-top : 2px solid whitesmoke;
+}
+
+center{
+    font-size : 18px;
+    text-shadow : 0px 1px 25px whitesmoke;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+/*The End*/
