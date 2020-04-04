@@ -60,7 +60,7 @@ a{
     width : 100%;
     height : 1000px;
     background-image : url("inspiration.png");
-    background-size: cover;
+    background-size: contain;
     box-sizing: border-box;
 }
 
