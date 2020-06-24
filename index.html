@@ -12,104 +12,257 @@
         
         <link href = "css/index.css" rel= "stylesheet">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- For animation -->
+
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+        <!-- For Bootstrap -->
+
+        <!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
     
-    <body>
+    <body onload="typeWriter()" id="screen">
+    	
+        <div class = "container-*">
 
-        <header>        
-                
-                <div class = "header-left">
-
-                    <p class = "Welcome">Warm Welcome!</p>
-
-                </div>              <!-- header-left close -->
-
-                <div class = "header-right">
-
-                    <ul>
-                        <li> <a href = "#"> Home</a> </li>
-                        <li> <a href = "Projects.html"> Projects </a> </li>
-                        <li> <a href = "Blogs.html">Blogs </a> </li>
-                    </ul>
-
-                </div>              <!-- header-right close -->
-        
-        </header>                   <!-- header close -->
-
-            <div class = "first-main">
-
-              <div class="first-container">
-
-                <div class="image-container">
+            <div class="first-container">
+              <div class ="row">
+                <div class="col-6 offset-3">
                    
-                  <img class="myimage" src = "https://avatars3.githubusercontent.com/u/45727897?s=460&amp;u=0b1e7ba9541e924985d84bc7af25944d43a06e3f&amp;v=4">
+                	<img class="img-fluid rounded-circle" src = "https://avatars3.githubusercontent.com/u/45727897?s=460&amp;u=0b1e7ba9541e924985d84bc7af25944d43a06e3f&amp;v=4" />
 
                 </div>
+              </div> <!-- row close -->
 
-                <p class="first-text">Hi, my name is Divyansh Shukla, and I'm a third year computer and communication Engineering undergraduate from <a class = "MIT-ahref" href = "https://manipal.edu/mu.html" > MIT Manipal. </a> </p>
-                <p class="second-text"> I love learning new things and the idea of people using what I create.</p>
+                <p class="first-text container-fluid" id="typewritereffect1"> </p>
+                <p class="second-text container-fluid" id="typewritereffect2"> </p>
 
-              </div>                     <!-- container close -->
+            </div>                     <!-- first-container close -->
+        </div>                        <!-- container-* close -->
+
             
-            </div>                        <!-- First-main close -->
+        <nav class = "navbar navbar-expand-sm navbar-dark sticky-top" id ="navbar">
+        	<div class = "container-fluid">
+            	<a class = "navbar-brand" href="#">Warm Welcome!</a>
+            	<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
+            	</button>
+            	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+            	<ul class ="navbar-nav ml-auto">
+                	<li class = "nav-item"><a class = "nav-link" href="#">About me</a></li>
+                	<li class = "nav-item"><a class = "nav-link" href="#">Projects</a></li>
+                	<li class = "nav-item"><a class = "nav-link" href="#">Experience</a></li>
+                	<li class = "nav-item"><a class = "nav-link" href="#">Contact</a></li>
+            	</ul>
+              </div>
+          </div>
+        </nav>
 
-            <div class = "second-main">
+        <div class = "progress-container fixed-top">
+          <div class = "progress-bar" id = "myBar">
+          </div>
+        </div>
+          <!-- trying ends -->
 
-              <div class = "second-container">
+            <!-- Second Section Begins -->
 
-                <p class="temp1">I am actively applying for internships/jobs. I have the following skills under my belt:</p>
-               
-                <ul class="temp2">
+        <div class = "container-fluid" id = "animated-bg">
+          <div class = "container-fluid" id = "subheading">
+            <i class="fa fa-id-badge fa-2x"></i>
+            <p class="subheading">About Me</p>
+          </div>
+          <p class = "container-fluid" id="Description">I am a Developer, a gamer, and an avid reader. I also enjoy reading about new technologies, watching anime and travel. I am an aspiring computer scientist and one day plan provide IT education to everyone. </p>
+        	<p class="container-fluid" id="Description">I have acquired following skills in the span of my college life : </p>
+            <ul class="temp2">
+                <li> C++ | Java | Python | MySql</li>
+                <li>Machine Learning | Deep Learning | Computer Vision</li>
+                <li>HTML | CSS | Bootstrap | Javascript | React</li>
+                <li>Operating Systems | Parallel Programming | CUDA Programming</li>
+            </ul>
 
-                  <li> C++ | Java | Python | MySql</li>
-                  <li>Machine Learning | Deep Learning | Computer Vision</li>
-                  <li>HTML | CSS</li>
-                  <li>Operating Systems | Parallel Programming | CUDA Programming</li>
+            <div class = "container-fluid" id = "subheading">
+              <svg class="bi bi-display-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.75 13.5c.167-.333.25-.833.25-1.5h4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75z"/>
+              <path fill-rule="evenodd" d="M13.991 3H2c-.325 0-.502.078-.602.145a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+              <path d="M2 4h12v6H2z"/>
+              </svg>
+              <p class="subheading">Projects</p>
+            </div>
 
-                </ul>
+            <div class="card text-white bg-dark col-xs-12">
+  			   	<div class="card-header">KHOJ</div>
+                <div class="card-body">
 
-                <p class="temp3">I am currently learning:</p>
-                
-                <ul class="temp4">
+    				<h5 class="card-card-title">Description</h5>
+    				<p class="card-text">Project Khoj is an AI based Search Recommendation System which uses Image Classifier with Color Extractor and a NLP based ChatBot to provide the user a concise list of fashion products based on his/her interaction with the above mentioned interactors.</p>
 
-                  <li>Javascript</li>
-                  <li>Android Development</li>
+    				<h5 class="card-card-title">Stack</h5>
+    				<p class="card-text">Java | Tensorflow | jsoup | Opennlp | MySQL</p>
 
-                </ul>
+    				<h5 class="card-card-title"><a href = "https://github.com/NirajYagnik/khoj" class = "GithubLink"> Github Link</a></h5>
 
-                <p class="temp5">as you should have another thing to jump to after doing too much of one thing instead of jumping to consume social media.</p>
+    				<h5 class = "card-card-title">Desktop Application</h5>
+    				
 
-              </div>        <!-- container end -->
+  				</div>
 
-            </div>          <!-- Second-main end -->
+  			</div>
 
-              <div class="third-container">
 
-                <p class="text1"> What's Fun about me? </p>
+  			<div class="card text-white bg-dark col-xs-12">
+  			   	<div class="card-header">FIRMA</div>
+                <div class="card-body">
 
-                <p class="text2"> I love watching anime, marvel movies, play pc games and reading books(self-help mostly). </p>
+    				<h5 class="card-card-title">Description</h5>
+    				<p class="card-text">A full fledged company management system designed using Visual C# for the front end and mySQL for backend.Not only can Firma be used to store useful information about all the happenings inside a company but also presents various aspects of the company in the form of functionalities to the actor.</p>
 
-                <p class="contact-me"> Ping me : <a href="https://www.instagram.com/divyanshshukla/"> <span class="fa fa-instagram"> </span> </a>          <a href="https://www.facebook.com/divyansh.shukla.7"> <span class="fa fa-facebook-f"> </span> </a>            <a href="https://www.linkedin.com/in/divyansh-shukla-703421166/"> <span class = "fa fa-linkedin"> </span> </a>         <a href="https://github.com/The7th-Hokage"> <span class="fa fa-github"> </span> </a> </p>
+    				<h5 class="card-card-title">Stack</h5>
+    				<p class="card-text"> C# | MySQL</p>
 
-                <hr>
+    				<h5 class="card-card-title"><a href = "https://github.com/rpranayr/Firma" class="GithubLink"> Github Link</a></h5>
 
-                  <h2 class="feedback-heading"> Submit a feedback about something you like/dislike :)</h2>
-                  <p class="feedback-subheading">Email</p>
-                  <input class="email-tb">
-                  <p class="feedback-subheading">Feedback</p>
-                  <textarea class="textarea-tb"></textarea> <br>
-                  <input type="reset" class = "button-submit" value="Submit" >
-              
-                <hr>
+    				<h5 class = "card-card-title">Desktop Application</h5>
 
-                <center>Created By: </center>
-                <center> Divyansh Shukla </center>
-                <center> divyansh.professional@gmail.com </center>
-                <center> 9415443788 </center>
-              
-              </div>        <!-- container end -->
+  				</div>
 
+  			</div>
+
+  			<div class="card text-white bg-dark col-xs-12">
+  			   	<div class="card-header">Vehicle-Lane Detection</div>
+                <div class="card-body">
+
+    				<h5 class="card-card-title">Description</h5>
+    				<p class="card-text">Lane detection and Vehicle identification project in Python 3, uses several image preprocessing steps such as Gaussian Blur, Grayscaling, Uncanny edge detection, and finally Hough Line technique to detect lanes. It also identifies vehicle on the road using YOLO model.</p>
+
+    				<h5 class="card-card-title">Stack</h5>
+    				<p class="card-text"> Python 3 | CV2 | NumPy | TensorFlow</p>
+
+    				<h5 class="card-card-title"><a href = "https://github.com/The7th-Hokage/Lane-Vehicle-Detection" class="GithubLink"> Github Link</a></h5>
+
+    				<h5 class = "card-card-title">Desktop Application</h5>
+
+  				</div>
+  			</div>
+
+  			<div class="card text-white bg-dark col-xs-12">
+  			   	<div class="card-header">Tic-Tac-Toe</div>
+                <div class="card-body">
+                  <h5 class="card-card-title">Description</h5>
+    				      <p class="card-text">Made use of Android studio and Google Firebase to implement a tic-tac-toe app that has 3 main features namely Single Player, Multiplayer, and an in-built web browser. <b>Single Player</b> is designed for the user to play offline with others on the same phone. <b>Multi-Player</b> is designed for online gameplay where users can register new accounts, login into existing accounts. The data storage for user accounts, in-game data is being done using Firebase's NoSQL Realtime Database. Users can send and accept invites from other users in the Network Hub. </p>
+                  <h5 class="card-card-title">Stack</h5>
+    				      <p class="card-text"> Python 3 | CV2 | NumPy | TensorFlow</p>
+    				      <h5 class="card-card-title"><a href = "https://github.com/The7th-Hokage/Lane-Vehicle-Detection" class="GithubLink"> Github Link</a></h5>
+    				      <h5 class = "card-card-title">Android Application</h5>
+  				      </div>
+  			    </div> <!-- last card for projects end here -->
+
+          <div class = "container-fluid" id = "subheading">
+            <i class="fa fa-briefcase fa-2x"></i>
+            <p class="subheading">Experience</p>
+          </div>
+
+      </div> <!-- Animated bg close -->
+
+      <div class = "container-fluid" id = "animated-bg2">
+        <div class = "row">
+          <div class = "col-md-5">
+            <div class="card bg-light" id="Experience-left1" data-aos = "fade-up" data-aos-anchor-placement = "top-bottom" data-aos-duration = "1500">
+              <div class="card-header">Data Science Intern</div>
+                  <div class="card-body">
+                    <h5 class="card-card-title">4th December '19 - 7th January '20</h5>
+                    <p class="card-text">In this four weeks internship, I have used state of the art image processing techniques such as changing colorspaces, geometric transformation of images, image thresholding, smoothing images, image gradients, contours, hough transformation, segmentation and watershed algorithm, template matching, etc. to build an efficient and robust blob detection, lane detection, and object detection algorithm. </p>
+                  </div>
+            </div>
+          </div> <!-- left side cards ends here -->
+          <div class = "col-md-2" id="resp4">
+            <svg height="500" class = "container-fluid">
+              <line x1="100" y1="0" x2="100" y2="700" style="stroke:rgb(255,255,255);stroke-width:4" id="resp1" />
+               <circle cx="100" cy="150" r="10" stroke="black" stroke-width="3" fill="white" id="resp2" />
+               <circle cx="100" cy="350" r="10" stroke="black" stroke-width="3" fill="white" id="resp3"/>
+            </svg>
+          </div>
+          <div class = "col-md-5">
+            <div class="card bg-light" id="Experience-right1" data-aos = "fade-up" data-aos-anchor-placement = "top-bottom" data-aos-duration = "1500">
+              <div class="card-header">Actively Applying for Internships/Jobs</div>
+                  <div class="card-body">
+                    <h5 class="card-card-title"></h5>
+                    <p class="card-text">Looking forward to an amazing experience.. </p>
+                  </div>
+            </div>
+          </div>
+        </div> <!--row ends here -->
+
+        <div class = "container-fluid" id = "subheading">
+          <svg class="bi bi-chat-quote-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 0 1-.612.01.405.405 0 0 1-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 9.333 4 8.587 4 7.667 4 6.747 4.776 6 5.734 6c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 9.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 0 1-.613.01.405.405 0 0 1-.011-.59c.42-.416.672-.831.81-1.22z"/>
+          </svg>
+          <p class="subheading">Contact Me</p>
+        </div>
+
+        <p>
+          <a href="https://www.instagram.com/divyanshshukla/"> <i class="fa fa-instagram fa-2x" id="contact-me"> </i> </a>          
+          <a href="https://www.facebook.com/divyansh.shukla.7"> <i class="fa fa-facebook-f fa-2x" id="contact-me"> </i> </a>            
+          <a href="https://www.linkedin.com/in/divyansh-shukla-703421166/"> <i class = "fa fa-linkedin fa-2x" id="contact-me"> </i> </a>         
+          <a href="https://github.com/The7th-Hokage"> <i class="fa fa-github fa-2x" id="contact-me"> </i> </a>
+        </p> 
+        <p>
+          <a href="mailto:divyansh.professional@gmail.com"> <i class="fa fa-envelope fa-2x" id="contact-me"> </i> </a> 
+          <a href="tel:+919415443788"> <i class="fa fa-mobile fa-3x" id="contact-me"> </i> </a> 
+          <a href="https://steamcommunity.com/profiles/76561198833134129/"> <i class="fa fa-steam fa-2x" id="contact-me"> </i> </a> 
+        </p>
+        </p>
+
+        <center><p class="end">Made with <i class="fa fa-heart" style="color: red"> </i> by Divyansh Shukla!</center>
+        </div>
+      </div> <!-- Animated bg2 ends -->
+
+        <script src = "JS/index.js" type = "text/javascript"></script>
+        <script src = "JS/three.r95.min.js" type="text/javascript"></script>
+        <script src="JS/vanta.net.min.js" type="text/javascript"></script>
+        <script>
+			VANTA.NET({
+  			el: "#animated-bg",
+  			mouseControls: true,
+  			touchControls: true,
+  			minHeight: 200.00,
+  			minWidth: 200.00,
+  			scale: 1.00,
+  			scaleMobile: 1.00,
+  			color: 0xffffff,
+  			backgroundColor: 0x0,
+  			points: 20.00,
+  			maxDistance: 1.00,
+  			spacing: 40.00
+			})
+		</script>
+
+     <script>
+      VANTA.NET({
+        el: "#animated-bg2",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffffff,
+        backgroundColor: 0x0,
+        points: 20.00,
+        maxDistance: 1.00,
+        spacing: 40.00
+      })
+    </script>
+
+		<!-- JS, Popper.js, and jQuery --->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     </body>
 </html> 

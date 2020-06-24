@@ -1,62 +1,50 @@
 html,body{
-    margin : 0;
-    padding: 0;
     font-family : "Lucida Grande";
+    scroll-behavior: "smooth";
 }
 
+nav{
+    background-color: rgba(32, 32, 32, 0.9) !important;
+    z-index: 10 !important; 
+    width : 100% !important;
+}
 
-header{
-    height: 80px;
-    width : 100%;
-    background-color : rgba(8, 8, 8, 0.8);
-    position : fixed ; 
-    z-index: 10;
-    top: 0px;
+.nav-item{
+    padding-right : 20px;
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+    opacity: 0.95;
 }
 
 li a{
-    transition : color 1s;
+    transition : color 0.6s;
 }
 
-.header-right{
-    float: right;
-    height : 77px;
-    padding-right : 50px;
+.progress-container{
+    width: 100%;
+    height : 3px;
+    background: black;
 }
 
-.header-right li{
-    padding : 10px 30px;
-    list-style: none;
-    color :whitesmoke;
-    float: left;
-    letter-spacing: 2px;
+.progress-bar{
+    height: 3px;
+    background-color: white !important;
+    width:0%;
 }
 
-.Welcome {
-    float : left;
-    color : whitesmoke;
-    font-size: 40px;
-    opacity: 0.85;
-    margin : 15px 0px 10px 25px;
-    cursor: default;
+.img-fluid{
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 110px;
+    min-height: 110px;
+    margin-bottom: 1%;
 }
-
-a{
-    text-decoration: none;
-    color : whitesmoke;
-}
-
-.header-right a{
-    display : block;
-    height : 77px;
-    line-height: 77px;
-    margin-top: -26px;
-}
-/*End of header*/
 
 .first-container{
     width : 100%;
-    height : 900px;
+    height : 800px;
     background-image: url("homepage.jpg");
     background-size: cover;
     color: whitesmoke;
@@ -65,16 +53,6 @@ a{
     padding-right : 50px;
     padding-left : 50px;
     padding-top : 15%;
-}
-
-.first-main{
-    position : relative;
-    top : -15px;
-    text-align: center; 
-}
-
-.MIT-ahref {
-    font-weight: bold;
 }
 
 .first-container p{
@@ -89,199 +67,158 @@ a{
     text-align: center;
     margin-left : 40%;
     margin-right : 40%;
-    padding-top: 5%;
     margin-bottom: 100px;
 }
 
-.myimage{
-    height : 270px;
-    width : 270px;
-    border-radius: 50%;
-}
-
-.first-text{
-    margin-top : -30px;
-    cursor: default;
+.container-fluid{
+    border : 1px solid black;
 }
 
 .second-text{
     margin-top: 20px;
     cursor: default;
+    margin-bottom : 60px;
 }
 
-/*First section over*/
-
-
-.second-container{
-    width : 100%;
-    height: 540px;
-    margin-top : -39px;
-    margin-bottom : -16px;
-    background-image: url(https://wallpaperplay.com/walls/full/4/5/f/80955.jpg);
-    background-size: cover;
+i{
+    color: white;
+    padding-top: 2%;
 }
 
-.temp1{
-    color : whitesmoke;
-    opacity: 0.95;
-    padding-left : 3%;
-    line-height: 30px;
-    font-size: 24px;
+svg{
+    margin-top: -1%;
+}
+
+
+.subheading{
+    font-family: "Algerian";
+    display : inline-block;
+    color: white;
+    font-size: 30px;
+    margin-left : 1%;
     cursor: default;
 }
 
+#subheading{
+    margin : 10% 0% 5% 0%;
+}
+
+#Description{
+    color : whitesmoke;
+    padding-left : 3%;
+    line-height: 30px;
+    font-size: 22px;
+    cursor: default;
+    margin-bottom: -1%;
+}
+
+div.card{
+    margin-bottom: 2%;
+}
+
 .temp2{
-    color:white;
+    color:whitesmoke;
     padding-left : 10%;
-    margin-top: -12px;
-    text-shadow : 0px 1px 25px whitesmoke;
     cursor: default;
 }
 
 .temp2 li{
-    font-size : 24px;
-    padding : 10px 25px;
-    word-spacing: 16px;
+    list-style-type: "</>";
+    font-size : 22px;
+    padding : 7px 25px;
+    word-spacing: 12px;
 }
 
-.temp3{
-    line-height: 30px;
-    padding-left: 3%;
-    font-size : 24px;
+.card-header {
+    font-size: 25px;
+}
+
+.card-card-title{
+    margin-right: 25px;
+}
+
+h5{
+    display: inline-block;
+}
+
+.GithubLink {
     color : white;
-    cursor: default;
 }
 
-.temp4{
+.GithubLink:hover {
     color : white;
-    padding-left : 10%;
-    margin-top : -12px;
-    cursor: default;
 }
 
-.temp4 li{
-    font-size : 24px;
-    padding : 10px 25px;
-    word-spacing: 16px;
+
+@media screen and (max-width: 576px)
+{
+    p.first-text{
+        font-size: 6vw;
+        margin-top: 10%;
+    }
+
+    p.second-text{
+        font-size: 6vw;
+    }
+
+    a.navbar-brand{
+        font-size: 6vw !important;
+    }
+    .first-container .row{
+        margin-top: 70px;
+    }
+    div.col-md-2{
+        height: 0px;
+    }
+
+}
+@media screen and (min-width: 577px) and (max-width: 751px)
+{
+    p.first-text{
+        font-size: 4vw;
+    }
+
+    p.second-text{
+        font-size: 4vw;
+    }
+
+    a.navbar-brand{
+        font-size: 4vw;
+    }
+    div.col-md-2{
+        height: 0px;
+    }
 }
 
-.temp5{
+@media screen and (min-width: 751.1px) and (max-width: 1000px)
+{
+    #Experience-right1{
+        margin-top: 70% !important;
+    }
+}
+
+p.toextend{
+    margin-top : 0px;
+}
+
+#Experience-left1{
+    margin-top: 2%;
+}
+
+#Experience-right1{
+    margin-top: 45%;
+}
+
+svg.container-fluid{
+    display: inline-block !important;
+}
+
+#contact-me{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+p.end{
     color : white;
-    font-size: 24px;
-    padding-left: 3%;
-    line-height: 30px;
-    cursor: default;
+    margin-top: 10%;
 }
-
-/*Second section over*/
-
-.third-container{
-    height: 620px;
-    background-color: rgba(98,98,98,0.8);
-    color : whitesmoke;
-    background-image: url(https://wallpaperplay.com/walls/full/4/5/f/80955.jpg);
-    background-size : cover;
-    margin-top : -27px;
-}
-
-.text1{
-    padding-left : 3%;
-    font-size: 26px;
-    cursor: default;
-}
-
-.text2{
-    padding-left : 3%;
-    font-size : 24px;
-    word-spacing: 2px;
-    cursor: default;
-}
-
-.contact-me{
-    line-height : 50px;
-    font-size : 34px;
-    padding-left : 3%;
-    letter-spacing: 2px;
-    font-family : "Algerian";
-    text-shadow : 0px 1px 25px whitesmoke;
-    cursor: default;
-}
-
-span{
-    padding : 0px 30px;
-    text-shadow: none;
-}
-
-.feedback-heading{
- letter-spacing: 2px;
- word-spacing: 2px;
- padding-left : 20px;
- color : whitesmoke;
- opacity : 0.9;
-}
-
-.feedback-subheading{
-letter-spacing : 1px;
-font-weight : bold;
-font-size : 16px;
-padding-left: 20px;
-margin-bottom:-2px;
-color : whitesmoke;
-opacity : 0.9;
-}
-
-.email-tb{
-    width : 300px;
-    height : 20px;
-    color : #3b3c36;
-    padding-left : 10px;
-    margin-left : 20px;
-    background-color: whitesmoke;
-    opacity : 0.9;
-}
-
-.textarea-tb{
-    width : 300px;
-    height: 100px;
-    color : #3b3c36;
-    padding-left : 10px;
-    margin-left : 20px;
-    background-color: whitesmoke;
-    opacity: 0.9;
-
-}
-
-.button-submit{
- text-align : center;
- margin-left: 20px;
- margin-top : 5px;
- background-color : lime;
- color: white;
- height : 30px;
- width: 80px;
- border-radius: 10px;
- border : none;
- letter-spacing: 2px;
- box-shadow: 0px 5px limegreen;
- margin-bottom: 10px;
- cursor : pointer;
-}
-
-.button-submit:active{
-    box-shadow : none;
-    position : relative;
-    top : 5px;
-}
-
-hr{
-    border-top : 2px solid whitesmoke;
-}
-
-center{
-    font-size : 18px;
-    text-shadow : 0px 1px 25px whitesmoke;
-    letter-spacing: 1px;
-    cursor: default;
-}
-
-/*The End*/
