@@ -110,6 +110,8 @@ svg{
     font-size: 22px;
     cursor: default;
     margin-bottom: -1%;
+    padding-top: 10px;
+    border: 1px solid red;
 }
 
 div.card{
