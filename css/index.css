@@ -222,6 +222,10 @@ p.toextend{
     margin-top: 45%;
 }
 
+#Experience-left2{
+    margin-top: -75%;
+}
+
 svg.container-fluid{
     display: inline-block !important;
 }
