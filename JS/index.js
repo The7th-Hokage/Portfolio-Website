@@ -1,8 +1,7 @@
 /* for typewriter effect */
 let i = 0;
 let j = 0;
-let text1 = 'Hi, my name is Divyansh Shukla, and I\'m a final year computer and communication Engineering undergraduate from MIT Manipal.'
-let text2 = ' I love learning new things and the idea of people using what I create.'
+let text1 = 'Hi, my name is Divyansh Shukla, and I\'m a working professional in consulting by day, and a WebDeveloper/Programmer by Night.'
 let speed = 40;
 function typeWriter()
  {
@@ -11,15 +10,6 @@ function typeWriter()
 		document.getElementById("typewritereffect1").innerHTML += text1.charAt(i);
 		i++;
 		setTimeout(typeWriter,speed);
-	}
-	else
-	{
-		if(j<text2.length)
-		{
-		document.getElementById("typewritereffect2").innerHTML += text2.charAt(j);
-		j++;
-		setTimeout(typeWriter,speed);
-		}	
 	}
 }
 
