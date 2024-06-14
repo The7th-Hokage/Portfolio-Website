@@ -1,7 +1,7 @@
 /* for typewriter effect */
 let i = 0;
 let j = 0;
-let text1 = 'Hi, my name is Divyansh Shukla, and I\'m a working professional in Consulting by day, and a Web Developer/Programmer by night.'
+let text1 = 'Hi, my name is Divyansh Shukla, and I\'m a human being.'
 let speed = 40;
 function typeWriter()
  {
